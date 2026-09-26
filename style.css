@@ -1,0 +1,77 @@
+#volume-panel {
+    position: relative;
+    display: inline-block;
+}
+
+#volume-popup {
+    position: absolute;
+    bottom: 110%;
+    left: 0;
+    width: 160px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+#volume-popup[hidden] {
+    display: none;
+}
+
+#video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#player {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+#controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    background: linear-gr
+}
+
+#play-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background-color: #000000;
+    opacity: 50%;
+
+}
+
+.material-symbols-outlined {
+    color: #ffffff;
+}
+
+#play-btn #pause {
+    display: none;
+}
+
+#play-btn.playing #play {
+    display: none;
+}
+
+#play-btn.playing #pause {
+    display: inline-block;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Video Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=play_arrow,pause" />
+</head>
+
+<body>
+    
+    <div id="player">
+        <video id="video" src="clip.mp4"></video>
+
+        <div id="controls">
+            <button id="play-btn">
+                <span id="play" class="material-symbols-outlined">play_arrow</span>
+                <span id="pause" class="material-symbols-outlined">pause</span>
+            </button>
+
+            <input type="file" id="file-input" accept="video/*">
+
+            <div id="volume-panel">
+                <button id="volume-btn">Volume: 100%</button>
+                <div id="volume-popup" hidden>
+                    <p id="volume-timer">10.0s</p>
+                    <button id="click-target">CLICK!</button>
+                    <p id="volume-label">0 Clicks</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="player.js"></script>
+    <script src="volume.js"></script>
+</body>
+</html>
