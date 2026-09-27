@@ -1,3 +1,21 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+#upload-screen {
+    position: fixed;
+    display: flex;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+
 #volume-panel {
     position: relative;
     display: inline-block;
@@ -15,6 +33,19 @@
     text-align: center;
 }
 
+#volume-btn {
+    display: flex;
+    gap: 4px;
+    height: 44px;
+    padding: 0 12px;
+    border: none;
+    border-radius: 22px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: sans-serif;
+    align-items: center;
+}
+
 #volume-popup[hidden] {
     display: none;
 }
@@ -30,13 +61,6 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-}
-
-html, body {
-    margin: 0;
-    height: 100%;
-    background-color: #000000;
-    overflow: hidden;
 }
 
 #controls {
@@ -57,21 +81,25 @@ html, body {
     border-radius: 100%;
     background-color: #000000;
     opacity: 50%;
+}
 
+#seek-canvas {
+    position: absolute;
+    left: 0;
+    bottom: 64px;
+    width: 100%;
+    height: 200px;
 }
 
 .material-symbols-outlined {
     color: #ffffff;
 }
 
-#play-btn #pause {
-    display: none;
-}
-
-#play-btn.playing #play {
+#play-btn #pause, #play-btn.playing #play {
     display: none;
 }
 
 #play-btn.playing #pause {
     display: inline-block;
 }
+
